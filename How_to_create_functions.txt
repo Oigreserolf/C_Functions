@@ -1,0 +1,17 @@
+La estructura general de una funcion en C es la siguiente:
+
+tipo_de_retorno nombre_de_la_funcion (lista_de_parámetros)
+{
+	cuerpo_de_la_función
+	return expresión
+}
+
+*tipo_de_retorno: es el tipo del valor devuelto por la función, o, en caso de que la función no devuelva valor alguno, la palabra reservada void.
+
+*nombre_de_la_función: es el nombre o identificador asignado a la función.
+
+*lista_de_parámetros: es la lista de declaración de los parámetros que son pasados a la función. Éstos se separan por comas. Debemos tener en cuenta que pueden existir funciones que no utilicen parámetros.
+
+*cuerpo_de_la_función: está compuesto por un conjunto de sentencias que llevan a cabo la tarea específica para la cual ha sido creada la función.
+
+*return expresión: mediante la palabra reservada return, se devuelve el calor de la función, en este caso representado por expresión. 
