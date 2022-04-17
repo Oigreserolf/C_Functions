@@ -15,3 +15,30 @@ tipo_de_retorno nombre_de_la_funcion (lista_de_parámetros)
 *cuerpo_de_la_función: está compuesto por un conjunto de sentencias que llevan a cabo la tarea específica para la cual ha sido creada la función.
 
 *return expresión: mediante la palabra reservada return, se devuelve el calor de la función, en este caso representado por expresión. 
+
+Vamos a crear un script sencillo con el propósito de calcular el precio de un producto basándose en el precio base del mismo y el impuesto aplicable. 
+
+Nuestro programa quedaría más o menos asi:
+
+#include <stdio.h>
+float precio(float base, float impuesto); /* declaración */
+
+main()
+{
+float importe = 2.5;
+float tasa = 0.07;
+printf("El precio a pagar es: %.2f\n", precio(importe, tasa));
+return 0;
+}
+
+float precio(float base, float impuesto) /* definición */
+{
+float calculo;
+calculo = base + (base * impuesto);
+return calculo;
+}
+
+
+En la función main declaramos dos variables de tipo float que contienen el precio base del producto y el impuesto aplicable. 
+La siguiente sentencia dentro de la función main es la llamada a la función de biblioteca printf, que recibe como parámetro una llamada a la función precio, que devuelve un valor de tipo float. 
+De esta manera, la función printf imprime por la salida estándar el valor devuelto por la función precio. Es importante tener en cuenta que las variables importe y tasa (argumentos) dentro de la función main tienen una correspondencia con las variables base e impuesto (parámetros) dentro de la función precio respectivamente.
